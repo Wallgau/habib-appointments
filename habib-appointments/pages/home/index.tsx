@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import * as data from '../../data/data.json';
+import DropDown from '../../components/dropDown/DropDown';
 
 interface Rdv {
   nom: string,
@@ -19,6 +20,7 @@ const Home = () => {
   return (
     <>
       <h1>Bienvenue!</h1>
+      <DropDown />
       {listRdvParMatin.map((rdv) => (
         <button key={rdv.id}>
           {rdv.nom}
