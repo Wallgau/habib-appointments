@@ -15,29 +15,25 @@ interface Rdv {
 }
 
 const Home = () => {
-  const listRdvParMatin: Rdv[] = data.listRdv.filter((rdv: Rdv) => rdv.moment === "aprem");
+  const listRdvParMatin: Rdv[] = data.listRdv.filter((rdv: Rdv) => rdv.moment === "matin");
+  const listRdvParAprem: Rdv[] = data.listRdv.filter((rdv: Rdv) => rdv.moment === "aprem");
   console.log(listRdvParMatin)
   return (
     <>
       <h1>Bienvenue!</h1>
       <DropDown />
+      <DropDown />
+      <h2>Matin</h2>
       {listRdvParMatin.map((rdv) => (
         <button key={rdv.id}>
           {rdv.nom}
         </button>
       ))}
-      {/* <DropDown />
-      <h2>Matin</h2>
-      {listRdvParMatin.map((rdv) => (
-        <button key={rdv.id}>
-          {rdv.name}
-        </button>
-      ))}
       {listRdvParAprem.map((rdv) => (
         <button key={rdv.id}>
-          {rdv.name}
+          {rdv.nom}
         </button>
-      ))} */}
+      ))}
     </>
   );
 };
