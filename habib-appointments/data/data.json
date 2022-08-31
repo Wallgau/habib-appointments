@@ -1,0 +1,37 @@
+{
+    "listRdv": [
+      {
+        "nom": "acupuncture",
+        "horaire": "15h30",
+        "Dr": "Vinet",
+        "adresse": "3 rue de la pompe 75016 PARIS",
+        "durée": "1h",
+        "moment": "aprem",
+        "accompagnant": "",
+        "date": "31/08",
+        "id": 1
+      },
+      {
+        "nom": "kiné",
+        "horaire": "10h",
+        "Dr": "Durand",
+        "adresse": "92 avenue Colonel Fabien Vitry-sur-seine",
+        "durée": "30min",
+        "moment": "matin",
+        "accompagnant": "Olfa",
+        "date": "31/08",
+        "id": 2
+      },
+      {
+        "nom": "Apa",
+        "horaire": "10h",
+        "Dr": "David",
+        "adresse": "rue Solférino Saint-Maur-des-Faussées",
+        "durée": "1h",
+        "moment": "matin",
+        "accompagnant": "Anouar",
+        "date": "01/09",
+        "id": 3
+      }
+    ]
+}
